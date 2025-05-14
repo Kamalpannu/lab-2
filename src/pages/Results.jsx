@@ -15,7 +15,7 @@ export default function Results() {
         .then((data) => {
             const results = data.filter((flight) =>
                 flight.from.toLowerCase() === from.toLowerCase() &&
-            flight.to.toLowerCase() === to.toLowerCase()
+                flight.to.toLowerCase() === to.toLowerCase()
         );
         setFlights(results);
         setIsLoading(false);
